@@ -3,18 +3,18 @@
 namespace WikibaseDumpProcessor\Tests;
 
 use PHPUnit_Framework_TestCase;
-use WikibaseDumpProcessor\Services;
+use WikibaseDumpProcessor\DumpServices;
 
 /**
- * @covers WikibaseDumpProcessor\Services
+ * @covers WikibaseDumpProcessor\DumpServices
  *
  * @licence GNU GPL v2+
  * @author Katie Filbert < aude.wiki@gmail.com >
  */
-class ServicesTest extends PHPUnit_Framework_TestCase {
+class DumpServicesTest extends PHPUnit_Framework_TestCase {
 
 	public function testNewEntityDeserializer() {
-		$services = new Services();
+		$services = new DumpServices();
 
 		$deserializer = $services->newEntityDeserializer();
 		$this->assertInstanceOf( 'Deserializers\DispatchingDeserializer', $deserializer );

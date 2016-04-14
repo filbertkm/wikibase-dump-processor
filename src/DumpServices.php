@@ -15,7 +15,7 @@ use Wikibase\DataModel\Entity\BasicEntityIdParser;
 use Wikibase\DataModel\Entity\DispatchingEntityIdParser;
 use Wikibase\DataModel\Entity\EntityIdValue;
 
-class Services {
+class DumpServices {
 
 	public function newEntityDeserializer() {
 		return $this->newDeserializerFactory()->newEntityDeserializer();
